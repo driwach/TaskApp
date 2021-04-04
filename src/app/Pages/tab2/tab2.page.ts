@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {TasksService} from '../../services/tasks.service';
+import {Liste} from '../../models/liste.model';
 
 @Component({
   selector: 'app-tab2',
@@ -8,6 +9,8 @@ import {TasksService} from '../../services/tasks.service';
 })
 export class Tab2Page {
 
-  constructor(public taskService: TasksService ) {}
+  constructor(public taskService: TasksService ) {
+
+  }
 
 }

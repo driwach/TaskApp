@@ -1,17 +1,19 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="ion-no-border ion-padding-bottom">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Finished
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <app-lists [finished]="true"></app-lists>
+  <!--<ion-list>
+    <ion-item *ngFor="let liste of taskService.liste" (click)="selectedList(liste)" detail>
+      <ion-label>{{liste.title}}</ion-label>
+      <ion-note slot="end" color="warning">{{ liste.items.length }} items</ion-note>
+    </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  </ion-list>-->
+
 </ion-content>
